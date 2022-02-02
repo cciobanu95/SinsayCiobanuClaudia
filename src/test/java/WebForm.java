@@ -3,10 +3,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class WebForm extends PageObject{
-    private final String EMAIL = "claudia.cioba95@yahoo.com ";
-    private final String FIRST_NAME ="Ciobanu ";
-    private final String LAST_NAME = "Claudia";
+    private final String EMAIL = "ceva_de_test90@yahoo.com";
+    private final String FIRST_NAME ="CINEVA";
+    private final String LAST_NAME = "CEVA";
     private final String PASSWORD = "Password12";
+
 
     @FindBy(id ="email_id")
     private WebElement email;
@@ -20,8 +21,10 @@ public class WebForm extends PageObject{
     @FindBy (id = "password_id")
     private WebElement  password;
 
-    @FindBy(xpath = "//a[contains(text(),'primary__PrimaryButtonComponent-sc-1pct4vx-0 fDECVK')]")
+    @FindBy(xpath = "//button[contains(@class,'primary__PrimaryButtonComponent-sc-1pct4vx-0 fDECVK')]")
     private WebElement CreeazaCont;
+
+
 
     public WebForm(WebDriver driver){
         super(driver);
@@ -41,7 +44,7 @@ public class WebForm extends PageObject{
 
     public void pressPassword() {this.password.sendKeys(PASSWORD);}
 
-   // public void pressCreeazaCont() {this.CreeazaCont.click();}
+    public void pressCreeaza() {this.CreeazaCont.click();}
 
 
 

@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class TestPlan extends BaseTest {
 
@@ -9,7 +10,7 @@ public class TestPlan extends BaseTest {
         webForm.enterFirstName();
         webForm.enterLastName();
         webForm.pressPassword();
-       // webForm.pressCreeazaCont();
+        webForm.pressCreeaza();
 
     }
 }
