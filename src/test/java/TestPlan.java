@@ -13,6 +13,16 @@ public class TestPlan extends BaseTest {
         webForm.pressCreeaza();
 
     }
+
+    @Test
+    public void SearchProduse (){
+        WebForm webForm = new WebForm(driver);
+        webForm.searchProdus();
+    }
+
+
+
+
 }
 
 
